@@ -1,7 +1,8 @@
-include "main.h"
+#include "main.h"
 /**
- * print_alphabet - prints alphabet in lowercase
- * Return: 0 if successful
+ * main - check the code
+ * print_alphabet - prints alphabets in lowercase
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -13,5 +14,4 @@ void print_alphabet(void)
 	}
 
 	_putchar('\n');
-	return (0);
 }
