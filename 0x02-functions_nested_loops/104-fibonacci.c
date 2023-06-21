@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-	unsigned int n = 0;
-	unsigned int current = 1;
+	unsigned int current = 2;
 	unsigned int previous = 1;
-	unsigned int temp;
+	unsigned int next;
 
-	printf("%u, %u", previous, current);
+	printf("1, 2");
 
-	while (n < 96)
+	while (current <= 4000000)
 	{
-		temp = current;
-		current += previous;
-		previous = temp;
-		printf(", %u", current);
-		n++;
+		next = previous + current;
+		if (next > 4000000)
+			break;
+		printf(", %u", next);
+		previous = current;
+		current = next;
 	}
 	printf("\n");
 	return (0);
