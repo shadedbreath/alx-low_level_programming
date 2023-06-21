@@ -13,7 +13,7 @@ int main(void)
 		if (m == 0)
 		printf("%ld", n);
 		else if (m == 1)
-			printf("%ld", o);
+			printf(", %ld", o);
 		else
 		{
 			o += n;
