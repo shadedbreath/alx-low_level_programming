@@ -6,18 +6,17 @@
  */
 int main(void)
 {
-	unsigned int current = 2;
-	unsigned int previous = 1;
-	unsigned int next;
+	unsigned long long current = 1;
+	unsigned long long previous = 0;
+	unsigned long long next;
 
-	printf("1, 2");
-
-	while (current <= 4000000)
+	for (int i = 0; i < 98; i++)
 	{
+		printf("%llu", current);
+
+		if (i != 97)
+			printf(", ");
 		next = previous + current;
-		if (next > 4000000)
-			break;
-		printf(", %u", next);
 		previous = current;
 		current = next;
 	}
