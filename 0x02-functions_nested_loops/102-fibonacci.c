@@ -18,7 +18,7 @@ int main(void)
 		{
 			o += n;
 			n = o - n;
-			printf(" %ld", o);
+			printf(", %ld", o);
 		}
 		++m;
 	}
